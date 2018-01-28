@@ -8,7 +8,7 @@ class Config:
 
     local_path = '/Users/Jialiang/Documents/leetcode'
     # solution of leetcode
-    github_leetcode_url = 'https://github.com/louisvitamin/leetcode/leetcode-algorithms/'
+    github_leetcode_url = 'https://github.com/louisvitamin/leetcode/blob/master/leetcode-algorithms/'
     # solution of pat,　暂时还没写
     #github_pat_url = 'https://github.com/louisvitamin/leetcode'
     leetcode_url = 'https://leetcode.com/problems/'
@@ -175,10 +175,9 @@ class Readme:
         self.msg = '# What I did on leetcode\n' \
                    'Until {}, I have solved **{}** / **{}** problems ' \
                    'while **{}** are still locked.' \
-                   '\n\nCompletion statistic: ' \
-                   '\nPython: {python}' \
-                   '\n\nNote: :lock: means you need to buy a book from LeetCode\n'.format(
-                    self.time, self.solved, self.total, self.locked, **self.others)
+                   '\n\nNote: :lock: means you need to buy a book from LeetCode\n' \
+                   'Note2: :Life is Short, I use Python\n'.format(
+                    self.time, self.solved, self.total, self.locked)
 
     def create_leetcode_readme(self, table_instance):
         """
@@ -212,7 +211,7 @@ class Readme:
                     'difficulty': item.difficulty,
                     'Done': item.python if item.python else 'To Do'
                 }
-                line = '|{id}|{title}|{difficulty}|{python}|\n'.format(**data)
+                line = '|{id}|{title}|{difficulty}|{Done}|\n'.format(**data)
                 f.write(line)
             print('README.md was created.....')
 
