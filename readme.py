@@ -175,8 +175,8 @@ class Readme:
         self.msg = '# What I did on leetcode\n' \
                    'Until {}, I have solved **{}** / **{}** problems ' \
                    'while **{}** are still locked.' \
-                   '\n\nNote: :lock: means you need to buy a book from LeetCode\n' \
-                   'Note2: :Life is Short, I use Python\n'.format(
+                   '\n\nNote1: :lock: means you need to pay some money\n' \
+                   '\n\nNote2: :Life is Short, I use Python\n'.format(
                     self.time, self.solved, self.total, self.locked)
 
     def create_leetcode_readme(self, table_instance):

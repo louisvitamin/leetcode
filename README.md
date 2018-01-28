@@ -1,7 +1,9 @@
 # What I did on leetcode
-Until 2018-01-28 19:07:37, I have solved **1** / **690** problems while **126** are still locked.
+Until 2018-01-28 19:10:42, I have solved **1** / **690** problems while **126** are still locked.
 
-Note: :lock: means you need to buy a book from LeetCode
+Note1: :lock: means you need to pay some money
+
+
 Note2: :Life is Short, I use Python
 
 ----------------
